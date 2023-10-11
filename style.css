@@ -1,0 +1,97 @@
+*{
+  padding : 0px;
+  margin : 0px;
+  box-sizing:  border-box;
+  font-family: 'NTR', sans-serif;
+}
+
+body{
+  background:  #010101;
+  width:  100%;
+  height:  100vh;
+  display:  flex ;
+  justify-content:  center ;
+}
+
+.box{
+  width: 100%;
+  height: 600px;
+  background : transparent  ;
+  display:  flex ;
+  flex-flow:  row wrap;
+  justify-content:  space-around;
+  align-items:  center ;
+  margin-top:  50%;
+  gap:  40px;
+}
+
+.card {
+  width: 260px;
+  height : 340px;
+  background: #010101;
+  position:  relative;
+  border-radius:15px;
+  color:  #fff;
+  font-size:  1.2em;
+  transition: all .4s ease-out;
+}
+
+.card:before{
+content:'';
+position:  absolute;
+top: -2px;
+left:  -2px;
+right:  -2px;
+bottom:  -2px;
+background:  #fff;
+z-index: -1;
+}
+
+.card:After{
+content:'';
+position:  absolute;
+top: -2px;
+left:  -2px;
+right:  -2px;
+bottom:  -2px;
+background:  #fff;
+z-index: -2;
+filter:  blur(20px);
+}
+
+.card:After,
+.card:before{
+  border-radius: 15px;
+  background: rgb(236,196,255);
+background: linear-gradient(50deg, rgba(236,196,255,1) 0%, #010101 , rgba(255,247,209,1) 99%);
+}
+
+
+.box .card h2{
+  text-align:  center;
+  margin-top:  15%;
+  font-size:  1.5em;
+  letter-spacing:  2px;
+  color: wheat;
+  text-transform:  capitalize;
+  transition : .4s ease-out;
+}
+
+.box .card p{
+  position:  absolute;
+  top:  30%;
+  margin:  0 10%;
+  font-size: .9em; 
+  letter-spacing:  1px;
+}
+
+.card:hover{
+  background: rgb(236,196,255);
+background: linear-gradient(50deg, rgba(236,196,255,1) 0% , rgba(255,247,209,1) 99%); color:  #000; 
+font-weight:  bold;
+} 
+.card:hover h2{
+  color:  #000;
+  font-size: 1.7em;
+  margin-top:  13%;
+}
