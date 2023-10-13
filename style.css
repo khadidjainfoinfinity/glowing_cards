@@ -34,7 +34,6 @@ body{
   color:  #fff;
   font-size:  1.2em;
   transition: all .4s ease-out;
-  overflow : hidden ;
 }
 
 .card:before{
@@ -78,14 +77,21 @@ background: linear-gradient(50deg, rgba(236,196,255,1) 0%, #010101 , rgba(255,24
   transition : .4s ease-out;
 }
 
-.box .card p{
-  position:  absolute;
-  top:  30%;
-  margin:  0 10%;
-  font-size: .9em; 
+.box .card .content {
+  width:  100%;
+  height:  60%;
+  background: transparent ;
+  font-size: .8em; 
   letter-spacing:  1px;
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  overflow:  hidden;
 }
 
+.box .card .content p{
+  width:  90%;
+}
 .card:hover{
   background: rgb(236,196,255);
 background: linear-gradient(50deg, rgba(236,196,255,1) 0% , rgba(255,247,209,1) 99%); color:  #000; 
@@ -95,4 +101,4 @@ font-weight:  bold;
   color:  #000;
   font-size: 1.7em;
   margin-top:  13%;
-}
+    }
